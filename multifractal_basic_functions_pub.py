@@ -100,7 +100,7 @@ def inverse_mellin_UM(parameters, scale):
         function_transformed[index] = quad(inverse_mellin_UM_integrand, -np.inf, np.inf, args=(x_o, C, alpha, scale))[0]
         index +=1 
 
-    function_transformed = function_transformed/norm(function_transformed, x)  # Although PDF is normalized by definition, this is to correct numerical errors.
+   # function_transformed = function_transformed/norm(function_transformed, x)  # Although PDF is normalized by definition, this is to correct numerical errors.
 
     return function_transformed
 
