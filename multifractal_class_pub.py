@@ -46,7 +46,7 @@ class multifractals:
         return self.parameters
 
     def scales_inc(self):    
-        return self.scales_in
+        return self.scales_inc
 
     def scales_flux(self):
         return self.scales_flux     
