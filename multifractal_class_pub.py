@@ -29,7 +29,7 @@ class multifractals:
         self.K = mse.UM_parameters(self.flux_scaling, self.field_inc_scaling, self.scales_flux, self.scales_inc, self.momenta_flux, self.momenta_inc, 'K')
         self.parameters = mse.UM_parameters(self.flux_scaling, self.field_inc_scaling, self.scales_flux, self.scales_inc, self.momenta_flux, self.momenta_inc, 'parameters')
 
-# Please note that the outer_scale calculated through the UM_parameters function is in the units of the regional scale.
+# The UM_parameters contains: [H, alpha, C_1, outer scale of process, fluctuations proportionality constant, UM fit error]. Please note that the outer_scale calculated through the UM_parameters function is in the units of the regional scale.
 
         
 
@@ -51,5 +51,5 @@ class multifractals:
     def scales_fluxes(self):
         return self.scales_flux     
 
-    def K(self):
+    def moment_scaling_function(self):
         return self.K
