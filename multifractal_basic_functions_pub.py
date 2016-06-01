@@ -38,7 +38,7 @@ def Heaviside(x):
 
 
 def st_gauss(x):
-    return 2*np.exp(-x**2/2.0)/sqrt(2*3.1416)
+    return 2*np.exp(-x**2/2.0)/sqrt(2*np.pi)
 
 
 # Simple algorithm to find the norm of function
