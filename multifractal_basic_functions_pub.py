@@ -64,7 +64,7 @@ def integrate_up_to_value(function, argument, value):
     index = 0
     integral = 0
 
-    while ((integral < value) & (index < size_function)):
+    while ((integral < value) & (index < size_function - 1)):
       
         step_size = argument[index+1]-argument[index]
         integral += ((function[index+1]+function[index])/2.0)*step_size
