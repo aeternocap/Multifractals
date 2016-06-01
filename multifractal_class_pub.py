@@ -45,10 +45,10 @@ class multifractals:
     def UM_parameters(self):
         return self.parameters
 
-    def scales_inc(self):    
+    def scales_increments(self):    
         return self.scales_inc
 
-    def scales_flux(self):
+    def scales_fluxes(self):
         return self.scales_flux     
 
     def K(self):
